@@ -25,10 +25,10 @@ Follow this documentation to set up a Kubernetes cluster on **Ubuntu 22.04 LTS.*
 
 | Role   |    FQDN                   | IP          | OS                | RAM  | CPU | 
 | ------ | ------------------------  | ------------| ----------------  | -----| ----|
-|Master  |k8s-master.kloudbyteshub.com  |192.168.0.121 | Ubuntu 22.04  |  2G  |   2 |
-|Worker  |k8s-worker1.kloudbyteshub.com |192.168.0.122 | Ubuntu 22.04  |  1G  |   1 |
-|Worker	 |k8s-worker2.kloudbyteshub.com |192.168.0.123 | Ubuntu 22.04  |  1G  |   1 |
-|Worker	 |k8s-worker3.kloudbyteshub.com |192.168.0.124 | Ubuntu 22.04	 |  1G  |   1 |
+|Master  |k8s-master.acomputerguru.com  |192.168.0.121 | Ubuntu 22.04  |  2G  |   2 |
+|Worker  |k8s-worker1.acomputerguru.com |192.168.0.122 | Ubuntu 22.04  |  1G  |   1 |
+|Worker	 |k8s-worker2.acomputerguru.com |192.168.0.123 | Ubuntu 22.04  |  1G  |   1 |
+|Worker	 |k8s-worker3.acomputerguru.com |192.168.0.124 | Ubuntu 22.04	 |  1G  |   1 |
 
 ## On both Kmaster and Kworker
 #### Login as root user
@@ -123,10 +123,10 @@ systemctl reload sshd
 
 ```
 cat >>/etc/hosts<<EOF
-192.168.0.121   k8s-master.kloudbyteshub.com     master 
-192.168.0.122   k8s-worker1.kloudbyteshub.com    worker1 
-192.168.0.123   k8s-worker2.kloudbyteshub.com    worker2
-192.168.0.124   k8s-worker3.kloudbyteshub.com    worker3 
+192.168.0.121   k8s-master.acomputerguru.com     master 
+192.168.0.122   k8s-worker1.acomputerguru.com    worker1 
+192.168.0.123   k8s-worker2.acomputerguru.com    worker2
+192.168.0.124   k8s-worker3.acomputerguru.com    worker3 
 EOF
 ```
 ## Kubernetes Setup On k8s-master
