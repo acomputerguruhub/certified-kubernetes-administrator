@@ -2,7 +2,7 @@
 
 Follow this documentation to set up a kubectl CLI tool on utility server to manage the kubernetes cluster.
 
-## Install curl
+## Install curl if not installed already
 ```
 apt install curl -y
 ```
